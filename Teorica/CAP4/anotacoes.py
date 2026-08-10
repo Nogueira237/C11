@@ -67,3 +67,25 @@ print(mtz.sum(axis=0)[0])       # retorna a soma da coluna de índice 0 (coluna 
 print(mtz.sum(axis=1))          # retorna a soma de cada linha da matriz
 print(mtz.sum(axis=1)[1])       # retorna a soma da linha de índice 1 (linha 2)
 
+#
+# Números aleatórios com NumPy - Módulo Random
+arr = np.random.randint(10)     # numero aleatorio de 0 a 9
+print(arr)
+
+arr = np.random.randint(5, 10)  # numero aleatorio de 5 a 9
+print(arr)
+
+arr = np.random.randint(1, 10, 10) # 10 numeros aleatorio de 1 a 9
+print(arr)
+
+# Plantando a semente aleatória - para gerar os mesmos números independente da máquina
+np.random.seed(5)
+arr = np.random.randint(1, 10, 10)
+print(arr)
+
+#
+# Extraindo elementos únicos
+print(np.unique(arr))   # extrai os elementos únicos e organiza em ordem crescente
+
+# Contando elementos únicos
+print(np.unique(arr, return_counts=True))   # extrai os elementos unicos e mostra quantas vezes eles se repetem
