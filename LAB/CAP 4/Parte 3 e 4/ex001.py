@@ -5,11 +5,11 @@ dataset = np.loadtxt('LAB/CAP 4/DataSets/space.csv', delimiter = ';', dtype = 's
 
 # Extrai a coluna de "Status Mission"
 dataset = dataset[1:,7]
-print(dataset)      # mascara
+#print(dataset)      # mascara
 
 # Gera uma mascara com true e false
 mascara = dataset == 'Success'
 
 # soma os trues e divide pelo tamanho do dataset
 media = np.sum(mascara) / len(dataset) * 100
-print(media)
+print(f"A porcentagem média de sucesso das missões é: {media:.2f}")
