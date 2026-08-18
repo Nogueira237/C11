@@ -1,6 +1,6 @@
 import numpy as np
 
-dataset = np.loadtxt('../DataSets/space.csv', delimiter = ';', dtype = 'str', encoding='utf-8')
+dataset = np.loadtxt('Teorica/DataSets/space.csv', delimiter = ';', dtype = 'str', encoding='utf-8')
 print(dataset)
 
 # Extraindo as colunas do dataset
