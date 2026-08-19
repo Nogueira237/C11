@@ -12,4 +12,4 @@ mascara = dataset == 'Success'
 
 # soma os trues e divide pelo tamanho do dataset
 media = np.sum(mascara) / len(dataset) * 100
-print(f"A porcentagem média de sucesso das missões é: {media:.2f}")
+print(f"A porcentagem média de sucesso das missões é: {media:.2f}%")
