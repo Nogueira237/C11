@@ -3,7 +3,8 @@ import numpy as np  # importa o numpy
 
 dfPaises = pd.read_csv('LAB/CAP 5/DataSets/paises.csv', delimiter = ';')    # le o dataset 'paises.csv'
 
-dfPaises = dfPaises.loc[1:, ['Country', 'Region', 'Population']]
+dfPaises = dfPaises.loc[:, ['Country', 'Region', 'Population']]
+print(dfPaises)
 
 Population = dfPaises.loc[:, 'Population']
 
