@@ -1,6 +1,6 @@
-import pandas as pd
+import pandas as pd  # importa o pandas
 
-dfPaises = pd.read_csv('LAB/CAP 5/DataSets/paises.csv', delimiter=';')
+dfPaises = pd.read_csv('LAB/CAP 5/DataSets/paises.csv', delimiter = ';')    # le o dataset 'paises.csv'
 
 # Função que reduz a mortalidade infantil em 15%
 def reduzirMortalidade(valor):
