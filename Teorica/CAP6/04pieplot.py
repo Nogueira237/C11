@@ -14,6 +14,6 @@ paisesSemCosta = ds[ds['Coastline (coast/area ratio)'] == 0]        # paises com
 qtSemCosta = len(paisesSemCosta)
 qtComCosta = len(ds) - qtSemCosta
 
-plt.pie(x = [qtSemCosta, qtComCosta], labels = ['% países sem costa', '% países com costa'])
+plt.pie(x = [qtSemCosta, qtComCosta], labels = ['% países sem costa', '% países com costa'], autopct = '%1.1f%%')
 
 plt.show()
