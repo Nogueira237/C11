@@ -8,3 +8,12 @@ ds = pd.read_csv('Teorica/DataSets/paises.csv', delimiter = ';')    # le o datas
 
 ## PIE PLOT
 
+paisesSemCosta = ds[ds['Coastline (coast/area ratio)'] == 0]        # paises com condicional de nao ter costa
+#print(paisesSemCosta)
+
+qtSemCosta = len(paisesSemCosta)
+qtComCosta = len(ds) - qtSemCosta
+
+plt.pie(x = [qtSemCosta, qtComCosta], labels = ['% países sem costa', '% países com costa'])
+
+plt.show()
