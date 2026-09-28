@@ -4,7 +4,7 @@ import pandas as pd                 # importa pandas
 import matplotlib.pyplot as plt     # importa módulo 'pyploy' do matplotlib
 import seaborn as sns               # importa seaborn
 
-# Importando o dataset tips
+# Importando o dataset penguins
 ds_penguins = sns.load_dataset('penguins')
 print(ds_penguins.columns)
 
