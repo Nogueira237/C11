@@ -13,6 +13,5 @@ sns.histplot(
     x = 'age',
     hue = 'sex',
     kde = 'True'    # traça uma curva de densidade
-
 )
 plt.show()
