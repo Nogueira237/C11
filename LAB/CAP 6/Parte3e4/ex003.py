@@ -10,8 +10,8 @@ print(ds_titanic)
 # boxplot
 sns.boxplot(
     data = ds_titanic, # dataset
-    x = 'age',
-    y = 'pclass',
+    x = 'pclass',
+    y = 'age',
     hue = 'sex' # separa por sexo
 )
 
