@@ -7,7 +7,7 @@ import seaborn as sns               # importa seaborn
 ds = pd.read_csv('LAB/CAP 6/DataSets/paises.csv', sep =';')
 #print(ds)
 
-# reg plot
+# regplot
 sns.regplot(
     data = ds,
     x = 'Literacy (%)',
