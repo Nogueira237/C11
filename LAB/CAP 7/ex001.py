@@ -18,7 +18,6 @@ airtravel['Passengers'].plot(
     ylabel='Número de passageiros'
 )
 
-
 co2emission['CO2_Emissions'].plot(
     ax=axes[1],
     title='Emissão de CO2',
@@ -27,3 +26,22 @@ co2emission['CO2_Emissions'].plot(
 )
 
 plt.show()
+
+# Realizando a decomposição das séries
+decompositionAirtravel = seasonal_decompose(airtravel['Passengers'], model='additive')
+decompositionAirtravel.plot()
+plt.tight_layout()
+plt.show()
+# Perguntas - Airtravel
+# a. Sim, apresenta tendência crescente.
+# b. Sim, cresce até o mês 7-8, e depois decresce até o início do outro ano.
+# c. Não é possível identificar um ciclo.
+
+decompositionC02 = seasonal_decompose(co2emission['CO2_Emissions'], model='additive')
+decompositionC02.plot()
+plt.tight_layout()
+plt.show()
+# Perguntas - C02 emission
+# a. Sim, apresenta tendência decrescente.
+# b. Não, no gráfico de sazonalidade o marcador fica sempre em zero.
+# c. Não é possível identificar um ciclo.
